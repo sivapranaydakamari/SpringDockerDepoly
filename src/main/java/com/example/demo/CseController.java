@@ -10,4 +10,9 @@ public class CseController {
 	public int cseAdd(@RequestParam int a, @RequestParam int b) {
 		return a + b;
 	}
+	
+	@GetMapping("/mul")
+	public int cseMul(@RequestParam int a, @RequestParam int b) {
+		return a * b;
+	}
 }
